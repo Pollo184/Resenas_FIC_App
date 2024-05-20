@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nombre_alumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/apellido_pat_alumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido Paterno" />
+
+    <EditText
+        android:id="@+id/apellido_mat_alumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido Materno" />
+
+    <EditText
+        android:id="@+id/correo_alumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo" />
+
+    <EditText
+        android:id="@+id/contrasena_alumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carrera"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/carrera_alumno_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/carrera_options"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semestre"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/semestre_alumno_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/semestre_options"/>
+
+    <Button
+        android:id="@+id/agregar_alumno_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Alumno" />
+
+</LinearLayout>

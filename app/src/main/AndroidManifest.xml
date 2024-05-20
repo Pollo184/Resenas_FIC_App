@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="ReseñasFIC"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReseñasFIC"
+        tools:targetApi="31">
+
+        <activity android:name=".models.AdminActivity"
+            android:exported="true"/>
+
+        <activity android:name=".models.DocenteActivity"
+            android:exported="true"/>
+
+        <activity android:name=".models.ProfesorActivity"
+            android:exported="true"/>
+
+        <activity android:name=".models.PerfilProfesorActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.theme.MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".models.GestionAlumnosActivity" />
+        <activity android:name=".models.GestionDocentesActivity" />
+        <activity android:name=".models.GestionMateriasActivity" />
+        <activity android:name=".models.GestionReseñasActivity" />
+    </application>
+
+</manifest>
